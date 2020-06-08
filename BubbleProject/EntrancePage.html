@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html id="wrapper">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function saveName() {//function called after submit, saves player name to session storage
+            sessionStorage.setItem("userName", document.getElementById("playerName").value);
+        }
+        function savePassword() {//function called after submit, saves player password to session storage,
+            //if that player is not in the browser memory, set his game count to 0- he is a new player
+            sessionStorage.setItem("userPassword", document.getElementById("playerPassword").value);
+            if (localStorage.getItem(sessionStorage.getItem("userName") + sessionStorage.getItem("userPassword") + "gameCount") == null)
+                localStorage.setItem(sessionStorage.getItem("userName") + sessionStorage.getItem("userPassword") + "gameCount", 0)
+        }
+        function nextPage() {//function occurs on submit, saves name and password. call to next page happens automatically onsubmit
+            localStorage.setItem(document.getElementById("playerName").value + document.getElementById("playerPassword").value + "HighestScore", 0);
+            saveName();
+            savePassword();
+        }
+    </script>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body  >
+    <section>
+        <header>
+            <div class="text">Welcome to Bomb Bubbles!</div>
+        </header>
+        <aside>
+            <nav>
+                <details>
+                    <!--game details for player-->
+                    Bomb Bubbles was created in 2019, after being given the assignment in HTML5.
+                    <br />
+                    The project is the culmination of 6 HTML5 self-taught lessons, including tasks at the end of each one.
+                    <br />
+                    Hope you enjoy the game!
+                </details>
+            </nav>
+        </aside>
+        <article><!--form to simplify required fields- force user to fill them in, and onsubmit -->
+            <form onsubmit="nextPage()" action="GamePreferences.html">
+                <label>
+                    Enter Your Name
+                    <input name="name" required id="playerName" placeholder="Enter Your Name" />
+                </label>
+                <br />
+                <br />
+                <label>
+                    Enter Your Password
+                    <input name="password" required type="password" id="playerPassword" />
+                </label>
+                <br />
+                <br />
+                <input class="button" style="height:70px; width: 250px;" type="submit" value="Next Page" />
+            </form>
+        </article>
+        <footer>created by Batsheva Rich</footer>
+    </section>
+</body>
+</html>

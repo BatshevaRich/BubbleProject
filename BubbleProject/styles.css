@@ -1,0 +1,226 @@
+﻿body {
+    background-color: #CCCCCC;
+    height: inherit;
+}
+
+#wrapper {
+    /*width: 800px;*/
+    margin: 0 auto;
+    background-color: white;
+    height: -webkit-fill-available;
+}
+
+header {
+    background-color: #9e9e9e;
+    color: white;
+    height: 140px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+article {
+    text-align: center;
+    float: left;
+    width: 80%;
+    height: -webkit-fill-available;
+    background-color: gray;
+}
+
+aside {
+    float: right;
+    width: 20%;
+    height: -webkit-fill-available;
+    background: linear-gradient(gray,white,gray,white);
+    text-align: center;
+}
+
+.asideScores {
+    float: left;
+    width: 20%;
+    height: inherit;
+    background: linear-gradient(gray,white,gray,white);
+    text-align: center;
+    scr
+}
+
+details {
+    color: black;
+    /*float: left;*/
+    font-size: 20px;
+}
+
+input {
+    border-radius: 10px 20px 20px 10px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 40px;
+    font-family: Bernard MT Condensed;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    background-color: Teal;
+    text-align: center;
+}
+
+canvas {
+    height: 450px;
+    width: 90%;
+}
+
+.text {
+    /*border: 1px solid purple;*/
+    border: none;
+    padding: 4px;
+    border-radius: 25px;
+    background-image: linear-gradient(black, darkgrey, grey, grey, darkgrey, black);
+    width: 700px;
+    position: absolute;
+    margin-left: 15%;
+    width: 70%;
+    height: 100px;
+    text-align: center;
+    outline-color: black;
+    font-family: Bernard MT Condensed;
+    font-size: 80px;
+}
+
+meter {
+    width: 90%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 14px rgb(0, 0, 0);
+    margin-bottom: 10%;
+    margin-top: 10%;
+    position: center;
+}
+
+.myCircle {
+    border-width: 3px;
+    padding: 15px;
+    border-radius: 90px 90px 90px 90px;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+}
+
+.myBigCircle {
+    border-width: 3px;
+    padding: 5px;
+    border-radius: 90px 90px 90px 90px;
+    outline: none;
+    width: 90px;
+    height: 90px;
+}
+
+.score {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+p {
+    float: left;
+    padding: 2px;
+    font-size: 20px;
+    color: black;
+    margin-left: 5%;
+    margin-bottom: 0px;
+}
+
+a {
+    font-size: 40px;
+    font-weight: bolder;
+    color: darkslategray;
+}
+
+@keyframes popBubble {
+    from {
+        height: 50px;
+        outline: none;
+    }
+
+    to {
+        transition: 0.5s;
+        transform: scale(2) rotate(90deg);
+    }
+}
+
+@keyframes wonGame {
+    from {
+        font-size: 80px;
+        color: firebrick;
+    }
+
+    to {
+        transition: 2.5s;
+        transform: perspective() rotate(50deg);
+        color: black;
+        font-size: 120px;
+    }
+}
+
+h2 {
+    font-size: 100px;
+    color: firebrick;
+    font-family: Bernard MT Condensed;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+progress {
+    width: 90%;
+    background-color:black;
+    box-shadow: 10px 10px 14px rgb(0, 0, 0);
+    margin-bottom: 10%;
+    margin-top: 10%;
+    position: center;
+}
+
+@keyframes maxScore{
+    from {
+        font-size: 80px;
+        color: firebrick;
+    }
+
+    to {
+        transition: 2.5s;
+        transform: perspective() rotate(50deg);
+        color: black;
+        font-size: 120px;
+    }
+}
+
+h3 {
+    font-size: 60px;
+    color: darkblue;
+    float:right;
+    padding:2%;
+    margin-top:5%;
+
+    font-family: Bernard MT Condensed;
+}
