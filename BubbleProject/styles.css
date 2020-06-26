@@ -194,14 +194,14 @@ h2 {
 
 progress {
     width: 90%;
-    background-color:black;
+    background-color: black;
     box-shadow: 10px 10px 14px rgb(0, 0, 0);
     margin-bottom: 10%;
     margin-top: 10%;
     position: center;
 }
 
-@keyframes maxScore{
+@keyframes maxScore {
     from {
         font-size: 80px;
         color: firebrick;
@@ -218,9 +218,8 @@ progress {
 h3 {
     font-size: 60px;
     color: darkblue;
-    float:right;
-    padding:2%;
-    margin-top:5%;
-
+    float: right;
+    padding: 2%;
+    margin-top: 5%;
     font-family: Bernard MT Condensed;
 }
