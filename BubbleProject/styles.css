@@ -103,10 +103,6 @@ canvas {
 
 meter {
     width: 90%;
-    border-radius: 25px;
-    box-shadow: 10px 10px 14px rgb(0, 0, 0);
-    margin-bottom: 10%;
-    margin-top: 10%;
     position: center;
 }
 
@@ -194,15 +190,6 @@ h2 {
 /*    width: 200px;*/
     cursor: pointer;
     margin: 5px;
-}
-
-progress {
-    width: 90%;
-    background-color: black;
-    box-shadow: 10px 10px 14px rgb(0, 0, 0);
-    margin-bottom: 10%;
-    margin-top: 10%;
-    position: center;
 }
 
 @keyframes maxScore {
